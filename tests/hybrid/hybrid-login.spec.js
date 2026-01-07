@@ -3,7 +3,7 @@ import { loginViaApi } from '../../utils/authApi';
 import { injectToken } from '../../utils/browserAuth';
 import { users } from '../../test-data/users';
 
-test('@hybrid User can access app using API token without UI login', async ({ page, request }) => {
+test('@hybrid @smoke User can access app using API token without UI login', async ({ page, request }) => {
     // Step 1: Login via API
     const token = await loginViaApi(
         request,
